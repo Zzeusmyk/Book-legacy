@@ -1,0 +1,17 @@
+node_modules/
+.env
+.env.local
+.env.*.local
+uploads/
+data.db
+dist/
+*.log
+.DS_Store
+.vscode/
+.idea/
+
+# Database files (contain user data)
+server/data/*.json
+
+# Claude settings
+.claude/

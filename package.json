@@ -1,0 +1,21 @@
+{
+  "name": "book-video-upload",
+  "version": "1.0.0",
+  "description": "Book author video chapter upload platform with beautiful orange/black UI",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && nodemon index.js",
+    "server:start": "cd server && node index.js",
+    "client:dev": "cd client && npm run dev",
+    "client:build": "cd client && npm run build",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
