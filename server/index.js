@@ -25,7 +25,7 @@ const db = new Database(dataDir);
 
 // ── Middleware ───────────────────────────────────────────────
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://127.0.0.1:3000'],
+  origin: true,
   credentials: true,
 }));
 app.use(express.json());
@@ -483,8 +483,9 @@ app.use((err, req, res, next) => {
 });
 
 // ── Start ────────────────────────────────────────────────────
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`\n  BookLegacy API   →  http://localhost:${PORT}`);
+  console.log(`  LAN access       →  http://192.168.100.4:${PORT}`);
   console.log(`  Database dir     →  ${dataDir}`);
   console.log(`  Uploads dir      →  ${uploadsDir}\n`);
 });

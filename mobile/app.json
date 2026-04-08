@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "BookLegacy",
+    "slug": "booklegacy",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#07070f"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.booklegacy.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#07070f"
+      },
+      "package": "com.booklegacy.app"
+    },
+    "plugins": [
+      "expo-secure-store"
+    ]
+  }
+}
